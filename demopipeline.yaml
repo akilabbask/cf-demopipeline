@@ -1,0 +1,9 @@
+Parameters:  
+  BucketName:
+    Type: string
+    Default: myexperimentbucket
+
+Resources:
+  MyS3Bucket:
+    Type: AWS::S3::Bucket
+    BucketName: !Ref BucketName
